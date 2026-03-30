@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<br/>
+<center>
+    <h1>Hello {{ f_name }} </h1>
+<br/>
+    {{ fav_pizza }}    
+<br/>
+
+<ol>    
+{% for topping in fav_pizza %}
+    <li>{{ topping }}</li>
+{% endfor %}    
+</ol>
+</center>
+
+<br/><br/>
+
+{% endblock %}
